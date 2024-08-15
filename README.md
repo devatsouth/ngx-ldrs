@@ -47,7 +47,7 @@ You can now use the `<ngx-ldrs>` component in your templates to add a loader:
 ```
 
 ### Available Inputs
-- `ldrsType`: Specifies the type of loader. Refer to uiball.com/ldrs for available types.
+- `ldrsType`: Specifies the type of loader. Refer to [uiball.com/ldrs](https://uiball.com/ldrs/) for available types.
 - `color`: Sets the color of the loader (e.g., `"red"`, `"#ff0000"`).
 - `size`: Defines the size of the loader (numeric value).
 - `speed`: Controls the speed of the animation (numeric value).
@@ -66,6 +66,6 @@ This library is licensed under the MIT License. See the LICENSE file for more in
 Contributions are welcome! Please submit issues or pull requests to help improve this library.
 
 ## Acknowledgments
-This library is built on top of the fantastic loaders provided by uiball.com/ldrs.
+This library is built on top of the fantastic loaders provided by [uiball.com/ldrs](https://uiball.com/ldrs/).
 
 
