@@ -45,7 +45,7 @@ import {
   zoomies
 } from 'ldrs';
 
-export const animationRegistry = {
+export const ldrsRegistry = {
   bouncy,
   bouncyArc,
   cardio,
