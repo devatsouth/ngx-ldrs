@@ -1,27 +1,71 @@
-# NgxLdrs
+# ngx-ldrs
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+`ngx-ldrs` is an Angular library that allows you to easily integrate the open-source loaders from [uiball.com/ldrs](https://uiball.com/ldrs/) into your Angular applications. Whether you need a loader for data fetching, background processing, or any other asynchronous operation, `ngx-ldrs` provides a simple, customizable solution.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Seamless Angular Integration**: Add loaders to your Angular components with minimal setup.
+- **Highly Customizable**: Adjust loader type, color, size, and speed to match your application's design.
+- **Lightweight and Efficient**: Minimal impact on your application's performance.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install the library via npm:
+```bash
+npm install ngx-ldrs --save
+```
 
-## Build
+## Usage
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+After installing the library, you can start using it in your Angular components.
 
-## Running unit tests
+### Import the Module
+Add `ngxLdrsModule` to the `imports` array in your Angular module:
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ngxLdrsModule } from 'ngx-ldrs';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  declarations: [
+    // your components
+  ],
+  imports: [
+    BrowserModule,
+    ngxLdrsModule
+  ],
+  providers: [],
+  bootstrap: [/* your main component */]
+})
+export class AppModule { }
+```
 
-## Running end-to-end tests
+### Using the Component
+You can now use the `<ngx-ldrs>` component in your templates to add a loader:
+```html
+<ngx-ldrs [ldrsType]="'bouncy'" color="red" [size]="35" [speed]="1.75"></ngx-ldrs>
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Available Inputs
+- `ldrsType`: Specifies the type of loader. Refer to uiball.com/ldrs for available types.
+- `color`: Sets the color of the loader (e.g., `"red"`, `"#ff0000"`).
+- `size`: Defines the size of the loader (numeric value).
+- `speed`: Controls the speed of the animation (numeric value).
 
-## Further help
+### Example
+```html
+<ngx-ldrs [ldrsType]="'wave'" color="blue" [size]="50" [speed]="2.0"></ngx-ldrs>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This will render a "wave" loader with a blue color, 50px size, and a speed of 2.0.
+
+## License
+This library is licensed under the MIT License. See the LICENSE file for more information.
+
+## Contributing
+Contributions are welcome! Please submit issues or pull requests to help improve this library.
+
+## Acknowledgments
+This library is built on top of the fantastic loaders provided by uiball.com/ldrs.
+
+
