@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
-import { animationRegistry, LdrsType } from './animation.registry';
+import { ldrsRegistry, LdrsType } from './ldrs.registry';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -35,7 +35,7 @@ export class NgxLdrsComponent {
   }
 
   registerLoader(type: LdrsType): void {
-    const animation = animationRegistry[type];
+    const animation = ldrsRegistry[type];
     if (animation) {
       animation.register('ldrs-tag');
       this.isRegistered = true;
