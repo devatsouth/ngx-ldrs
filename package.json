@@ -5,8 +5,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:demo": "ng serve --project ngx-ldrs-demo",
     "build": "ng build --project ngx-ldrs",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build --watch --configuration development --project ngx-ldrs",
     "test": "ng test",
     "deploy": "npm run build && npm publish --access=public"
   },
