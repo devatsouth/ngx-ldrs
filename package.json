@@ -1,6 +1,6 @@
 {
   "name": "ngx-ldrs",
-  "version": "17.0.1",
+  "version": "17.0.2",
   "main": "dist/ngx-ldrs/index.d.ts",
   "scripts": {
     "ng": "ng",
