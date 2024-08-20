@@ -5,6 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "serve": "ng serve --project ngx-ldrs",
+    "serve:demo": "ng serve --project ngx-ldrs-demo",
     "build": "ng build --project ngx-ldrs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
