@@ -20,11 +20,11 @@ npm install ngx-ldrs --save
 After installing the library, you can start using it in your Angular components.
 
 ### Import the Module
-Add `ngxLdrsModule` to the `imports` array in your Angular module:
+Add `NgxLdrsModule` to the `imports` array in your Angular module:
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ngxLdrsModule } from 'ngx-ldrs';
+import { NgxLdrsModule } from 'ngx-ldrs';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,7 @@ import { ngxLdrsModule } from 'ngx-ldrs';
   ],
   imports: [
     BrowserModule,
-    ngxLdrsModule
+    NgxLdrsModule
   ],
   providers: [],
   bootstrap: [/* your main component */]

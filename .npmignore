@@ -1,0 +1,13 @@
+# node files
+dist/
+node_modules/
+
+# macOS files
+.DS_Store
+
+.vscode/
+.angular/
+projects/
+.editorconfig
+.gitignore
+tsconfig.json
