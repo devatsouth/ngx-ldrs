@@ -1,14 +1,15 @@
 {
   "name": "ngx-ldrs",
-  "version": "0.0.0",
+  "version": "17.0.2",
+  "main": "dist/ngx-ldrs/index.d.ts",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --project ngx-ldrs",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run build && npm publish --access=public"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
