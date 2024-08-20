@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { NgxLdrsComponent } from 'ngx-ldrs';
+import { NgxLdrsComponent } from './ngx-ldrs.component';
 import { NgxLdrsService } from './ngx-ldrs.service';
 
 
